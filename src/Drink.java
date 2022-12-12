@@ -31,8 +31,7 @@ public class Drink extends Item {
 	// to string
 	@Override
 	public String toString() {
-		return "Drink [ounces=" + ounces + ", type=" + type + ", name=" + name + ", calories=" + calories
-				+ ", itemType=" + itemType + "]";
+		return name + ": (" + type + "): ";
 	}
 
 }

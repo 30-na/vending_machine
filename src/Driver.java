@@ -13,15 +13,16 @@ public class Driver {
 
 	    Vending myMachine = new Vending(myVending);
 	    // Test line to show items before removing initially
-	    // System.out.println("Items originally there:");
-	    // myMachine.DisplayItems(); //debug helper function, REALLY NEEDS toString()
-	    // System.out.println("______________________________");
+	    
+	    System.out.println("Items originally there:");
+	    myMachine.DisplayItems(); //debug helper function, REALLY NEEDS toString()
+	    System.out.println("______________________________");
 	    //remove items
-	    // System.out.println("Items removed final count: ");
+	    System.out.println("Items removed final count: ");
 	    myMachine.unloadItems(mySelections);
 
 	    //Final output to display after removing
-	    myMachine.displayItems(); //debug helper function, REALLY NEEDS toString()
+	    ///myMachine.displayItems(); //debug helper function, REALLY NEEDS toString()
 
 	    /*****************/
 	    // Above DisplayItems() call is fine, but the Vending machine's deconstructor 
@@ -29,11 +30,21 @@ public class Driver {
 	    // done with a helper function that USES the toString()
 	    // We will NOT call DisplayItems() in testing 
 	    /*****************/
+	    
+	    // test snak and drink class
 		Snack s1 = new Snack("chips", 56, "Snack", 100, false);
 	    System.out.println(s1);
-	    // String name, float calories, String itemType, float ounces, String type
 	    Drink d1 = new Drink("soda", 456, "Drink", 5, "soda");
 	    System.out.println(d1);
+	    
+	    // test read file
+	    for(int i=0; i<myVending.size(); i++) {
+	    	System.out.println(myVending.get(i));
+	    }
+	    for(int i=0; i<mySelections.size(); i++) {
+	    	System.out.println(mySelections.get(i));
+	    }
+	    
 	}
 
 }

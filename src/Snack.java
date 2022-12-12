@@ -29,10 +29,7 @@ public class Snack extends Item {
 
 	@Override
 	public String toString() {
-		return "Snack [weight=" + weight + ", containsNuts=" + containsNuts + ", name=" + name + ", calories="
-				+ calories + ", itemType=" + itemType + ", getWeight()=" + getWeight() + ", isContainsNuts()="
-				+ isContainsNuts() + ", getName()=" + getName() + ", getCalories()=" + getCalories()
-				+ ", getItemType()=" + getItemType() + "]";
+		return getName() + ": ("  + getItemType() + "): ";
 	}
 	
 	//to string
