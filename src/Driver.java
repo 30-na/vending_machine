@@ -29,7 +29,11 @@ public class Driver {
 	    // done with a helper function that USES the toString()
 	    // We will NOT call DisplayItems() in testing 
 	    /*****************/
-	    
+		Snack s1 = new Snack("chips", 56, "Snack", 100, false);
+	    System.out.println(s1);
+	    // String name, float calories, String itemType, float ounces, String type
+	    Drink d1 = new Drink("soda", 456, "Drink", 5, "soda");
+	    System.out.println(d1);
 	}
 
 }
