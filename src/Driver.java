@@ -15,15 +15,16 @@ public class Driver {
 	    // Test line to show items before removing initially
 	    
 	    System.out.println("Items originally there:");
-	    myMachine.DisplayItems(); //debug helper function, REALLY NEEDS toString()
+	    myMachine.displayItems(); //debug helper function, REALLY NEEDS toString()
 	    System.out.println("______________________________");
 	    //remove items
 	    System.out.println("Items removed final count: ");
 	    myMachine.unloadItems(mySelections);
-
 	    //Final output to display after removing
-	    ///myMachine.displayItems(); //debug helper function, REALLY NEEDS toString()
-
+	    //debug helper function, REALLY NEEDS toString()
+	    System.out.println("______________________________");
+	    System.out.println("Items removed final count: ");
+	    myMachine.unloadItems(mySelections);
 	    /*****************/
 	    // Above DisplayItems() call is fine, but the Vending machine's deconstructor 
 	    // should call that function since it's the LAST operation. Notice it could be
@@ -32,7 +33,7 @@ public class Driver {
 	    /*****************/
 	    
 	    // test snak and drink class
-		Snack s1 = new Snack("chips", 56, "Snack", 100, false);
+		/*Snack s1 = new Snack("chips", 56, "Snack", 100, false);
 	    System.out.println(s1);
 	    Drink d1 = new Drink("soda", 456, "Drink", 5, "soda");
 	    System.out.println(d1);
@@ -45,6 +46,19 @@ public class Driver {
 	    	System.out.println(mySelections.get(i));
 	    }
 	    
+	    // test unloudItem(int).
+	    myMachine.unloadItem(2);
+	    myMachine.displayItems();
+	    myMachine.unloadItem(0);
+	    myMachine.unloadItem(2);
+	    myMachine.unloadItem(2);
+	    myMachine.unloadItem(2);
+	    myMachine.unloadItem(2);
+	    myMachine.unloadItem(2);
+	    myMachine.unloadItem(2);
+	    myMachine.unloadItem(2);
+	    myMachine.unloadItem(3);
+	    myMachine.displayItems();
+	    */
 	}
-
 }
